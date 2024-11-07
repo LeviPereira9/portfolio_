@@ -1,0 +1,116 @@
+{
+    "navbar": {
+        "home": "Home",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contactMe": "Contact"
+    },
+    "home": {
+        "header": {
+            "title": "Hello, my name is Levi",
+            "text": "I am a",
+            "words": [
+                "ADS Student", "Full-Stack Developer"
+            ]
+        },
+        "body": {
+            "about": {
+                "title": "About me",
+                "text": "I am a student of Analysis and Systems Development (ADS) at Fatec Carapicuíba, passionate about programming, always seeking new challenges and opportunities to learn and grow. I have experience in front-end and back-end development, with knowledge of modern tools and DevOps practices. I am always ready to contribute with my skills and work in a team to create effective and innovative solutions.",
+                "beyondTech": "Outside the world of technology",
+                "hobbies": [
+                    "Reading",
+                    "Writing book reviews",
+                    "Playing games"
+                ]
+            },
+            "professionalExperience": [
+                {
+                    "enterprise": "Boa Vista SCPC",
+                    "position": "Office Assistant",
+                    "duration": "1 year",
+                    "responsibilities": {
+                        "description": "I worked as support for my department, with the following responsibilities: ",
+                        "tasks": [
+                            "Manage and analyze user feedback on the FAQ page, identifying key points and suggesting improvements.",
+                            "Perform data analysis related to the FAQ to understand performance and identify improvement opportunities.",
+                            "Create a weekly banner highlighting the best compliment received from users, as a recognition for employees.",
+                            "Provide support for other tasks as needed, ensuring smooth operations."
+                        ]
+                    }
+                }
+            ],
+            "education": {
+                "formalEducation": [
+                    {
+                        "institution": "Fatec Carapicuíba",
+                        "degree": "Analysis and Systems Development",
+                        "status": "In Progress",
+                        "startedAt": "08/2023",
+                        "endedAt": "",
+                        "period": "3rd Semester",
+                        "expectedGraduation": "Expected Graduation: 08/2026"
+                    },
+                    {
+                        "institution": "ETEC Carapicuíba",
+                        "degree": "Technical in Administration",
+                        "status": "Completed",
+                        "startedAt": "02/2019",
+                        "endedAt": "08/2020",
+                        "period": "",
+                        "expectedGraduation": "Completed"
+                    }
+                ],
+                "bootcamps": [
+                    {
+                        "institution": "Digital Innovation One",
+                        "course": "Deal - Spring Boot and Angular",
+                        "duration": "91 hours",
+                        "year": "2024"
+                    },
+                    {
+                        "institution": "Digital Innovation One",
+                        "course": "Sysvision - Data Analytics with Power BI",
+                        "duration": "82 hours",
+                        "year": "2024"
+                    },
+                    {
+                        "institution": "Digital Innovation One",
+                        "course": "Santander Bootcamp 2023 - Backend Java",
+                        "duration": "88 hours",
+                        "year": "2023"
+                    }
+                ]
+            }
+        }
+    },
+    "skills": {
+        "frontEnd": {
+            "description": "Experience in creating responsive and dynamic user interfaces, using best practices and modern frameworks."
+        },
+        "backEnd": {
+            "description": "Experience in developing API systems"
+        },
+        "devOps": {
+            "description": "Knowledge in automating environments and version control to ensure agile and integrated workflows."
+        },
+        "note": "Although I have experience with the mentioned technologies, I am a beginner in the field and recognize that there is always more to learn. I am continuously improving my skills and staying updated with the latest trends and best practices in the industry."
+    },
+    "projects": [
+        {
+            "name": "Grandes Mentes",
+            "description": "This project uses the 'Pensador' API to display reflective and inspirational quotes from four famous philosophers.",
+            "links": {
+                "site": "...",
+                "github": "..."
+            },
+            "technologiesUsed": [
+                "ReactJS",
+                "SASS"
+            ]
+        }
+    ],
+    "contactMe": {
+        "message": "Hello, send me a message"
+    }
+}
