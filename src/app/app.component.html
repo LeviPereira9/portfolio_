@@ -4,14 +4,7 @@
   [url]="particlesJson"
   (particlesLoaded)="particlesLoaded($event)"
 ></ngx-particles>
-<nav>
-  <ul>
-    <li>{{ 'navbar.home' | translate }}</li>
-    <li>{{ 'navbar.skills' | translate }}</li>
-    <li>{{ 'navbar.projects' | translate }}</li>
-    <li>{{ 'navbar.contactMe' | translate }}</li>
-  </ul>
-</nav>
+
 <button (click)="switchLanguage('en')">English</button>
 <button (click)="switchLanguage('pt')">Português</button>
 <router-outlet />

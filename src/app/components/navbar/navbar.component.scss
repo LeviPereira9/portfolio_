@@ -1,0 +1,30 @@
+@import '../../scss/variables';
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 35px;
+  align-items: center;
+  font-size: 22px;
+  background-color: $particles-color;
+  font-weight: bold;
+
+  &__logo{
+    font-size: 24px;
+  }
+
+  &__menu{
+    display: flex;
+    gap: 20px;
+
+    a{
+      display: inline-block;
+      transition: transform .2s ease-in-out;
+
+      &:hover{
+        color: $primary-color;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
