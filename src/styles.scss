@@ -20,3 +20,14 @@ ngx-particles{
 .active{
   color: $primary-color;
 }
+
+fa-icon.git svg path{
+  fill: white;
+  stroke: #ff0000;
+  stroke-width: 10;
+
+  &:hover{
+    color: $particles-color;
+  }
+}
+

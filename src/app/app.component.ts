@@ -7,6 +7,8 @@ import { NgxParticlesModule } from '@tsparticles/angular';
 import { Container, Engine } from "@tsparticles/engine";
 import { NgParticlesService } from "@tsparticles/angular";
 import { loadSlim } from '@tsparticles/slim';
+import { FooterComponent } from "./components/footer/footer.component";
+
 
 @Component({
   selector: 'app-root',
@@ -16,7 +18,9 @@ import { loadSlim } from '@tsparticles/slim';
     CommonModule,
     TranslateModule,
     NavbarComponent,
-    NgxParticlesModule],
+    NgxParticlesModule,
+    FooterComponent
+],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
@@ -27,7 +31,8 @@ export class AppComponent {
 
   constructor(
     private translate: TranslateService,
-    private readonly ngParticlesService: NgParticlesService) {
+    private readonly ngParticlesService: NgParticlesService,
+    ) {
     // Configura os idiomas disponíveis
     this.translate.addLangs(['en', 'pt']);
     // Define o idioma padrão como inglês
@@ -39,6 +44,7 @@ export class AppComponent {
     // Verifica se o idioma do navegador é válido e se não for, usa 'en' como fallback
     const langToUse = browserLang && ['en', 'pt'].includes(browserLang) ? browserLang : 'en';
     this.translate.use(langToUse);
+
   }
 
   // Método para alternar entre idiomas

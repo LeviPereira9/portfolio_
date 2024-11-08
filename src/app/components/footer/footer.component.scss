@@ -1,0 +1,32 @@
+@import '../../scss/variables';
+
+.footer{
+  background-color: $particles-color;
+  padding: 25px 0;
+
+  &__copy{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__links{
+    display: flex;
+    padding: 25px 0;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+
+    i{
+      font-size: 30px;
+
+      &:hover{
+        color: $primary-color;
+      }
+    }
+
+  }
+}
+
+
+
