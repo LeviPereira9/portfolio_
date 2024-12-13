@@ -1,0 +1,21 @@
+<section class="home__education">
+  <div class="formalEducation">
+    <h2>{{'home.body.education.titleEducation' | translate}}</h2>
+    @for (formalEducation of formalEducations; track $index) {
+      <h2>{{formalEducation.institution}}</h2>
+      <p>{{formalEducation.degree}}
+        @if (formalEducation.status == 'Concluído' || formalEducation.status == "Completed") {
+          ({{formalEducation.startedAt}} - {{formalEducation.endedAt}})
+        }@else{
+          {{formalEducation.status}}: {{formalEducation.period}} ({{formalEducation.expectedGraduation}})
+        } </p>
+    }
+  </div>
+  <div class="bootcamps">
+    <h2>{{'home.body.education.titleBootcamp' | translate}}</h2>
+    @for (bootcamp of bootcamps; track $index) {
+      <h2>{{bootcamp.institution}}</h2>
+      <p>{{bootcamp.course}} • <span>{{bootcamp.duration}}</span></p>
+    }
+  </div>
+</section>

@@ -10,7 +10,7 @@
             "title": "Olá, meu nome é Levi",
             "text": "Sou um",
             "words": [
-                "Estudante de ADS", "Desenvolvedor Full-Stack"
+                "Entusiasta de Tecnologias Web", "Desenvolvedor Full-Stack"
             ]
         },
         "body": {
@@ -30,6 +30,7 @@
                     "position": "Auxiliar de Escritório",
                     "duration": "1 ano",
                     "responsibilities": {
+                        "title": "Atividade desempenhada",
                         "description": "Atuava como suporte para o meu setor, com as seguintes responsabilidades: ",
                         "tasks": [
                             "Gerenciar e analisar os feedbacks dos usuários sobre a página de FAQ, identificando os principais pontos e sugerindo melhorias.",
@@ -41,6 +42,8 @@
                 }
             ],
             "education": {
+                "titleEducation": "Educação",
+                "titleBootcamp": "Bootcamp",
                 "formalEducation": [
                     {
                         "institution": "Fatec Carapicuíba",
@@ -79,21 +82,55 @@
                         "course": "Santander Bootcamp 2023 - Backend Java",
                         "duration": "88 horas",
                         "year": "2023"
-                    }
+                    },
+                    {
+                      "institution": "Digital Innovation One",
+                      "course": "Nexa - Engenharia de Prompts na AWS com Claude",
+                      "duration": "10 horas",
+                      "year": "2024"
+                  }
                 ]
             }
         }
     },
     "skills": {
-        "frontEnd": {
-            "description": "Experiência na criação de interfaces de usuário responsivas e dinâmicas, utilizando as melhores práticas e frameworks modernos."
+        "list": [ {
+            "title":"Front End",
+            "description": "Experiência na criação de interfaces de usuário responsivas e dinâmicas, utilizando as melhores práticas e frameworks modernos.",
+            "icons": [
+              "devicon-html5-plain-wordmark",
+              "devicon-css3-plain-wordmark",
+              "devicon-javascript-plain",
+              "devicon-sass-original",
+              "devicon-bootstrap-plain-wordmark",
+              "devicon-react-original-wordmark",
+              "devicon-typescript-plain",
+              "devicon-angular-plain-wordmark"
+            ]
         },
-        "backEnd": {
-            "description": "Experiência no desenvolvimento de sistemas de API"
+        {
+            "title": "Back End",
+            "description": "Experiência no desenvolvimento de sistemas de API",
+            "icons":[
+              "devicon-java-plain-wordmark",
+              "devicon-spring-original-wordmark",
+              "devicon-azuresqldatabase-plain",
+              "devicon-mysql-plain-wordmark"
+            ]
         },
-        "devOps": {
-            "description": "Conhecimento em automação de ambientes e controle de versão para garantir fluxos de trabalho ágeis e integrados."
+         {
+            "title": "Dev Ops",
+            "description": "Conhecimento em automação de ambientes e controle de versão para garantir fluxos de trabalho ágeis e integrados.",
+            "icons":[
+              "devicon-docker-plain-wordmark",
+              "devicon-git-plain-wordmark",
+              "devicon-github-original-wordmark"
+            ]
         },
+        {
+          "title": "Machine Learning",
+          "description": "Experiência na aplicação de técnicas e ferramentas de aprendizado de máquina. Habilidade em aproveitar as capacidades de IA Generativa, engenharia de prompts e utilizar plataformas como o AWS SageMaker Canvas para integração de modelos. Experiência prática com projetos como reconhecimento facial, sistemas de recomendação e assistentes virtuais, além de conhecimento em Python e extração de dados."
+        }],
         "note": "Embora tenha experiência com as tecnologias mencionadas, sou iniciante na área e reconheço que sempre há mais a aprender. Estou continuamente aprimorando minhas habilidades e me mantendo atualizado com as últimas tendências e melhores práticas do setor."
     },
     "projects": [

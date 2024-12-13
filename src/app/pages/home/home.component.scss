@@ -1,0 +1,32 @@
+.home{
+
+  &__header{
+
+    &__toPt{
+      animation: typing 2s steps(24);
+
+      @keyframes typing{
+
+        from{
+          width: 0%;
+
+        }
+
+        to{
+          width: 100%;
+        }
+
+      }
+    }
+
+    &__word{
+      width: 100%;
+      padding-right: 3px;
+      border-right: 2px solid white;
+
+
+    }
+
+  }
+}
+

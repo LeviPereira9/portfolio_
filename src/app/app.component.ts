@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { NavbarComponent } from "./components/navbar/navbar.component";
@@ -8,6 +8,8 @@ import { Container, Engine } from "@tsparticles/engine";
 import { NgParticlesService } from "@tsparticles/angular";
 import { loadSlim } from '@tsparticles/slim';
 import { FooterComponent } from "./components/footer/footer.component";
+import { HomeComponent } from "./pages/home/home.component";
+import { SkillsComponent } from './pages/skills/skills.component';
 
 
 @Component({
@@ -19,7 +21,8 @@ import { FooterComponent } from "./components/footer/footer.component";
     TranslateModule,
     NavbarComponent,
     NgxParticlesModule,
-    FooterComponent
+    FooterComponent,
+
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

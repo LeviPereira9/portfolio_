@@ -10,13 +10,13 @@
             "title": "Hello, my name is Levi",
             "text": "I am a",
             "words": [
-                "ADS Student", "Full-Stack Developer"
+                "Web Technologies Enthusiast", "Full-Stack Developer"
             ]
         },
         "body": {
             "about": {
                 "title": "About me",
-                "text": "I am a student of Analysis and Systems Development (ADS) at Fatec Carapicuíba, passionate about programming, always seeking new challenges and opportunities to learn and grow. I have experience in front-end and back-end development, with knowledge of modern tools and DevOps practices. I am always ready to contribute with my skills and work in a team to create effective and innovative solutions.",
+                "text": "I am a student of Analysis and Systems Development (ADS) at Fatec Carapicuíba (Brazil), passionate about programming, always seeking new challenges and opportunities to learn and grow. I have experience in front-end and back-end development, with knowledge of modern tools and DevOps practices. I am always ready to contribute with my skills and work in a team to create effective and innovative solutions.",
                 "beyondTech": "Outside the world of technology",
                 "hobbies": [
                     "Reading",
@@ -30,6 +30,7 @@
                     "position": "Office Assistant",
                     "duration": "1 year",
                     "responsibilities": {
+                      "title": "Atividade desempenhada",
                         "description": "I worked as support for my department, with the following responsibilities: ",
                         "tasks": [
                             "Manage and analyze user feedback on the FAQ page, identifying key points and suggesting improvements.",
@@ -41,6 +42,8 @@
                 }
             ],
             "education": {
+                "titleEducation": "Education",
+                "titleBootcamp": "Bootcamp",
                 "formalEducation": [
                     {
                         "institution": "Fatec Carapicuíba",
@@ -79,23 +82,63 @@
                         "course": "Santander Bootcamp 2023 - Backend Java",
                         "duration": "88 hours",
                         "year": "2023"
-                    }
+                    },
+                    {
+                      "institution": "Digital Innovation One",
+                      "course": "Nexa - Prompt Engineering on AWS with Claude",
+                      "duration": "10 hours",
+                      "year": "2024"
+                  }
+
+
                 ]
             }
         }
     },
     "skills": {
-        "frontEnd": {
-            "description": "Experience in creating responsive and dynamic user interfaces, using best practices and modern frameworks."
+    "list": [
+        {
+            "title": "Front End",
+            "description": "Experience in creating responsive and dynamic user interfaces, using best practices and modern frameworks.",
+            "icons": [
+                "devicon-html5-plain-wordmark",
+                "devicon-css3-plain-wordmark",
+                "devicon-javascript-plain",
+                "devicon-sass-original",
+                "devicon-bootstrap-plain-wordmark",
+                "devicon-react-original-wordmark",
+                "devicon-typescript-plain",
+                "devicon-angular-plain-wordmark"
+            ]
         },
-        "backEnd": {
-            "description": "Experience in developing API systems"
+        {
+            "title": "Back End",
+            "description": "Experience in developing API systems",
+            "icons": [
+                "devicon-java-plain-wordmark",
+                "devicon-spring-original-wordmark",
+                "devicon-azuresqldatabase-plain",
+                "devicon-mysql-plain-wordmark"
+            ]
         },
-        "devOps": {
-            "description": "Knowledge in automating environments and version control to ensure agile and integrated workflows."
+        {
+            "title": "Dev Ops",
+            "description": "Knowledge in automating environments and version control to ensure agile and integrated workflows.",
+            "icons": [
+                "devicon-docker-plain-wordmark",
+                "devicon-git-plain-wordmark",
+                "devicon-github-original-wordmark"
+            ]
         },
-        "note": "Although I have experience with the mentioned technologies, I am a beginner in the field and recognize that there is always more to learn. I am continuously improving my skills and staying updated with the latest trends and best practices in the industry."
-    },
+        {
+            "title": "Machine Learning",
+            "description": "Experience in applying machine learning techniques and tools. Skilled in leveraging AI Generative capabilities, prompt engineering, and utilizing platforms like AWS SageMaker Canvas for model integration. Hands-on experience with practical projects including facial recognition, recommendation systems, and virtual assistants, along with expertise in Python and data extraction.",
+            "icons": []
+        }
+    ],
+    "note": "Although I have experience with the mentioned technologies, I am a beginner in the field and recognize that there is always more to learn. I am continuously improving my skills and staying updated with the latest trends and best practices in the industry."
+}
+,
     "projects": [
         {
             "name": "Grandes Mentes",

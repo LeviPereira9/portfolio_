@@ -1,0 +1,10 @@
+<div id="skills">
+  @for (skill of skills; track $index) {
+    <h1>{{skill.title}}</h1>
+    <p>{{skill.description}}</p>
+    @for (icon of skill.icons; track $index) {
+      <i class="{{icon}} abada"></i>
+    }
+  }
+  <p>Obs.: {{note}}</p>
+</div>

@@ -1,0 +1,12 @@
+<section class="home__about">
+  <h2>{{about.title}}</h2>
+  <p>{{about.text}}</p>
+  <h3>{{about.beyondTech}}</h3>
+  <ul>
+    @for (hobbie of about.hobbies; track $index) {
+      <li>{{hobbie}}</li>
+    }
+  </ul>
+</section>
+
+

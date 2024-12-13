@@ -1,0 +1,21 @@
+<section class="home__jobs">
+  @for (profission of profissions; track $index) {
+    <div class="home__jobs__card">
+      <h2>
+        {{profission.enterprise}} -
+        {{profission.position}}
+        ({{profission.duration}})
+      </h2>
+      <div class="home__jobs__card__responsabilities">
+        <p>{{profission.responsibilities?.title}}</p>
+        <p>{{profission.responsibilities?.description}}</p>
+        <ul>
+          @for (task of profission.responsibilities?.tasks; track $index) {
+            <li>{{task}}</li>
+          }
+        </ul>
+      </div>
+
+    </div>
+  }
+</section>
