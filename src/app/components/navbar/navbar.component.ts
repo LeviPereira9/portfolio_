@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Host, HostListener } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -13,5 +13,13 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+
+  isScrolled:boolean = false;
+
   constructor(private translate: TranslateService){}
+
+  @HostListener('window:scroll',[])
+  onWindowScroll(){
+    this.isScrolled = window.scrollY > 5;
+  }
 }
