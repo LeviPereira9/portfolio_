@@ -1,0 +1,31 @@
+@import '../../scss/variables';
+
+
+.skills{
+
+  &__title{
+    font-weight: none;
+  }
+
+  &__description{
+    padding: 16px 0 10px 0;
+  }
+
+  &__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 16px 0;
+    margin-bottom: 32px;
+
+    &__icon{
+      font-size: 5em;
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid $contrast-color;
+      color: $secondary-color;
+    }
+  }
+
+}

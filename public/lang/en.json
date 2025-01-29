@@ -147,7 +147,9 @@
                 "devicon-java-plain-wordmark",
                 "devicon-spring-original-wordmark",
                 "devicon-azuresqldatabase-plain",
-                "devicon-mysql-plain-wordmark"
+                "devicon-mysql-plain-wordmark",
+                "devicon-python-plain-wordmark",
+                "devicon-pandas-plain-wordmark"
             ]
         },
         {
@@ -161,8 +163,13 @@
         },
         {
             "title": "Machine Learning",
-            "description": "Experience in applying machine learning techniques and tools. Skilled in leveraging AI Generative capabilities, prompt engineering, and utilizing platforms like AWS SageMaker Canvas for model integration. Hands-on experience with practical projects including facial recognition, recommendation systems, and virtual assistants, along with expertise in Python and data extraction.",
-            "icons": []
+            "description": "Knowledge in applying machine learning techniques and tools, including linear regression for predictive analysis and statistical modeling. Skilled in leveraging the capabilities of Generative AI, prompt engineering, and integrating models using platforms like AWS SageMaker Canvas. Practical knowledge in projects such as facial recognition for classification and pattern detection in visual data.",
+            "icons":[
+              "devicon-tensorflow-original-wordmark",
+              "devicon-keras-plain-wordmark",
+              "devicon-scikitlearn-plain",
+              "devicon-amazonwebservices-plain-wordmark"
+            ]
         }
     ],
     "note": "Although I have experience with the mentioned technologies, I am a beginner in the field and recognize that there is always more to learn. I am continuously improving my skills and staying updated with the latest trends and best practices in the industry."
