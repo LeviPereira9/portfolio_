@@ -4,10 +4,28 @@
       <a href="#">LEVI</a>
     </span>
     <ul class="navbar__content__menu">
-      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" >{{ 'navbar.home' | translate }}</a></li>
-      <li><a routerLink="/skills" routerLinkActive="active"  >{{ 'navbar.skills' | translate }}</a></li>
-      <li><a routerLink="/projects" >{{ 'navbar.projects' | translate }}</a></li>
-      <li><a routerLink="/contact" >{{ 'navbar.contactMe' | translate }}</a></li>
+      <li><a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >
+        {{ navbar.home }}
+      </a></li>
+      <li><a
+        routerLink="/skills"
+        routerLinkActive="active"  >
+        {{ navbar.skills}}
+      </a></li>
+      <li><a
+        routerLink="/projects"
+        routerLinkActive="active" >
+        {{ navbar.projects}}
+      </a></li>
+      <li><a
+        routerLink="/contact"
+        routerLinkActive="active" >
+        {{ navbar.contactMe}}
+      </a></li>
     </ul>
   </div>
 </nav>
