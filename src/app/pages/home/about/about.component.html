@@ -1,12 +1,21 @@
 <section class="home__about">
-  <h2>{{about.title}}</h2>
-  <p>{{about.text}}</p>
-  <h3>{{about.beyondTech}}</h3>
-  <ul>
-    @for (hobbie of about.hobbies; track $index) {
-      <li>{{hobbie}}</li>
-    }
-  </ul>
+  <div class="home__about__left">
+    <div class="home__about__left__img-wrapper">
+      <img class="home__about__left__img" src="inzone.svg" alt="">
+    </div>
+  </div>
+  <div class="home__about__right">
+    <h2 class="home__about__right__title">{{about.title}}</h2>
+    <p class="home__about__right__text">{{about.text}}</p>
+    <div class="home__about__right__hobbies">
+      <p class="home__about__right__hobbies__title">{{about.beyondTech}}</p>
+      <ul>
+        @for (hobbie of about.hobbies; track $index) {
+          <li>{{hobbie}}</li>
+        }
+      </ul>
+    </div>
+  </div>
 </section>
 
 

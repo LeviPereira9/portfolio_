@@ -15,10 +15,10 @@ type skill = {
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
-    skills: skill[] = [{
-    title: "",
-    description: "",
-    icons: []
+  skills: skill[] = [{
+  title: "",
+  description: "",
+  icons: []
   }]
   note:string = "";
 

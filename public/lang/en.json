@@ -16,12 +16,12 @@
         "body": {
             "about": {
                 "title": "About me",
-                "text": "I am a student of Analysis and Systems Development (ADS) at Fatec Carapicuíba (Brazil), passionate about programming, always seeking new challenges and opportunities to learn and grow. I have experience in front-end and back-end development, with knowledge of modern tools and DevOps practices. I am always ready to contribute with my skills and work in a team to create effective and innovative solutions.",
-                "beyondTech": "Outside the world of technology",
+                "text": "I am a Systems Analysis and Development (ADS) student at Fatec Carapicuíba, passionate about technology and programming. I am constantly seeking new challenges that allow me to learn, grow, and contribute to innovative solutions. I have experience in front-end and back-end development, as well as knowledge of modern DevOps practices. Currently, I am delving into the field of Machine Learning (ML), with an understanding of its functioning, including model creation and training, and familiarity with widely used tools and libraries in the area. I value teamwork and am always ready to bring my skills to challenging projects.",
+                "beyondTech": "Personal Interests",
                 "hobbies": [
                     "Reading",
                     "Writing book reviews",
-                    "Playing games"
+                    "Gaming"
                 ]
             },
             "professionalExperience": [
@@ -67,26 +67,55 @@
                 "bootcamps": [
                     {
                         "institution": "Digital Innovation One",
-                        "course": "Deal - Spring Boot and Angular",
+                        "course": {
+                          "enterprise": "Deal",
+                          "name": "Spring Boot and Angular"
+                        },
                         "duration": "91 hours",
                         "year": "2024"
                     },
                     {
                         "institution": "Digital Innovation One",
-                        "course": "Sysvision - Data Analytics with Power BI",
+                        "course": {
+                          "enterprise": "Sysvision",
+                          "name":"Data Analytics with Power BI"
+                        },
                         "duration": "82 hours",
                         "year": "2024"
                     },
                     {
                         "institution": "Digital Innovation One",
-                        "course": "Santander Bootcamp 2023 - Backend Java",
+                        "course": {
+                          "enterprise": "Santander Bootcamp 2023",
+                          "name":"Backend Java"
+                        },
                         "duration": "88 hours",
                         "year": "2023"
                     },
                     {
                       "institution": "Digital Innovation One",
-                      "course": "Nexa - Prompt Engineering on AWS with Claude",
+                      "course": {
+                        "enterprise": "Nexa",
+                        "name": "Prompt Engineering on AWS with Claude"
+                      },
                       "duration": "10 hours",
+                      "year": "2024"
+                  },
+                    {
+                      "institution": "Digital Innovation One",
+                      "course": {
+                        "enterprise": "Nexa",
+                        "name": "Advanced Image and Text Analysis with AI on AWS"
+                      },
+                      "duration": "10 hours",
+                      "year": "2024"
+                  },
+                    {
+                      "institution": "Digital Innovation One",
+                      "course": {
+                        "enterprise":"BairesDev",
+                        "name":"Machine Learning Practitioner"},
+                      "duration": "96 hours",
                       "year": "2024"
                   }
 
@@ -144,8 +173,8 @@
             "name": "Grandes Mentes",
             "description": "This project uses the 'Pensador' API to display reflective and inspirational quotes from four famous philosophers.",
             "links": {
-                "site": "...",
-                "github": "..."
+                "site": "https://project-grandesmentes.vercel.app/",
+                "github": "https://github.com/LeviPereira9/frases"
             },
             "technologiesUsed": [
                 "ReactJS",
@@ -154,6 +183,7 @@
         }
     ],
     "contactMe": {
-        "message": "Hello, send me a message"
+        "title": "Get in Touch",
+        "message": "I’m always open to connecting! Whether you have a question, want to share ideas, or just say hello, my inbox is ready for you. Additionally, if you'd like to discuss job opportunities or tech-related projects, I’d be glad to hear from you. Feel free to drop me a message, and I’ll reply as soon as I can!"
     }
 }

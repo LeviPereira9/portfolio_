@@ -13,7 +13,10 @@ type formalEducation = {
 
 type bootcamp = {
   institution:string,
-  course:string,
+  course:{
+    enterprise: string,
+    name: string
+  },
   duration:string,
   year: string,
 }
@@ -26,6 +29,10 @@ type bootcamp = {
   styleUrl: './education.component.scss'
 })
 export class EducationComponent {
+
+  formalEducation:string = '';
+  bootcamp:string = '';
+
   formalEducations:formalEducation[] = [
     {
       institution:'',
@@ -40,7 +47,7 @@ export class EducationComponent {
   bootcamps:bootcamp[] = [
     {
       institution:'',
-      course:'',
+      course:{enterprise: '', name: ''},
       duration:'',
       year: '',
     }
@@ -58,7 +65,9 @@ export class EducationComponent {
 
   getEducation(){
     this.formalEducations = this.translate.instant('home.body.education.formalEducation');
+    this.formalEducation = this.translate.instant('home.body.education.titleEducation');
     this.bootcamps = this.translate.instant('home.body.education.bootcamps');
+    this.bootcamp = this.translate.instant('home.body.education.titleBootcamp');
   }
 
 }

@@ -1,0 +1,70 @@
+.home__education{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 50px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid white;
+
+
+
+  &__left{
+
+    max-width: 55%;
+
+    h2{
+      padding-bottom: 14px;
+    }
+
+    &__institution{
+      font-weight: bold;
+      font-size: 19px;
+    }
+
+    &__degree{
+      padding-bottom: 12px;
+    }
+
+    &__bootcamp-list{
+      padding-top: 8px;
+      &__enterprise{
+        font-weight: 700;
+      }
+
+      p{
+        padding-bottom: 8px;
+      }
+    }
+
+  }
+
+  &__right{
+    max-width: 35%;
+
+    &__img-wrapper {
+      position: relative;
+      display: inline-block; // ou block, dependendo do layout desejado
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle, #322136 0%, transparent 100%);
+        border-radius: 50%;
+        pointer-events: none; // Para garantir que o gradiente não interfira com interações
+      }
+    }
+
+    &__img{
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+}

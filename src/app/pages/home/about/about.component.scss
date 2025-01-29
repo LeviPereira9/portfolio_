@@ -1,0 +1,64 @@
+.home__about{
+
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+
+  padding-top: 50px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid white;
+
+  &__right{
+    max-width: 60%;
+
+    &__title{
+      padding-bottom: 12px;
+    }
+
+    &__text{
+      padding-bottom: 14px;
+    }
+
+    &__hobbies{
+
+      &__title{
+        font-weight: bold;
+      }
+
+      ul li {
+        font-style: italic;
+        list-style: disc;
+        padding-top: 6px;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &__left{
+    max-width: 35%;
+
+    &__img-wrapper {
+      position: relative;
+      display: inline-block; // ou block, dependendo do layout desejado
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle, #322136 0%, transparent 100%);
+        border-radius: 50%;
+        pointer-events: none; // Para garantir que o gradiente não interfira com interações
+      }
+    }
+
+    &__img{
+      position: relative;
+      max-width: 100%;
+      z-index: 1;
+    }
+  }
+}

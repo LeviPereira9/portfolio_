@@ -1,19 +1,67 @@
 .header {
-  &__text {
-    display: inline-block;
 
-    &__word {
-      border-right: 3px solid white;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 3px solid white;
-      animation:
-      blink 0.5s step-end infinite alternate;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid white;
 
-      @keyframes blink {
-        50% { border-color: transparent; }
+  font-size: 30px;
+  padding: 16px 0px;
+
+  text-align: left;
+  word-wrap: break-word;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left{
+    max-width: 50%;
+    &__text {
+      display: inline-block;
+      padding-bottom: 100px;
+
+      &__word {
+        border-right: 3px solid white;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid white;
+        animation:
+        blink 0.5s step-end infinite alternate;
+
+        @keyframes blink {
+          50% { border-color: transparent; }
+        }
+
       }
-
     }
   }
+
+  &__right{
+    max-width: 45%;
+
+    &__img-wrapper {
+      position: relative;
+      display: inline-block; // ou block, dependendo do layout desejado
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle, #322136 0%, transparent 100%);
+        border-radius: 50%;
+        pointer-events: none; // Para garantir que o gradiente não interfira com interações
+      }
+    }
+
+    &__img{
+      max-width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+
 }

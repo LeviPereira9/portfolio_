@@ -1,21 +1,45 @@
 <section class="home__education">
-  <div class="formalEducation">
-    <h2>{{'home.body.education.titleEducation' | translate}}</h2>
-    @for (formalEducation of formalEducations; track $index) {
-      <h2>{{formalEducation.institution}}</h2>
-      <p>{{formalEducation.degree}}
-        @if (formalEducation.status == 'Concluído' || formalEducation.status == "Completed") {
-          ({{formalEducation.startedAt}} - {{formalEducation.endedAt}})
-        }@else{
-          {{formalEducation.status}}: {{formalEducation.period}} ({{formalEducation.expectedGraduation}})
-        } </p>
-    }
+  <div class="home__education__left">
+    <div class="home__education__left__formalEducation">
+      <h2>{{formalEducation}}</h2>
+      @for (formalEducation of formalEducations; track $index) {
+        <p class="home__education__left__institution">{{formalEducation.institution}}</p>
+        <p class="home__education__left__degree">{{formalEducation.degree}}
+          @if (formalEducation.status == 'Concluído' || formalEducation.status == "Completed") {
+            ({{formalEducation.startedAt}} - {{formalEducation.endedAt}})
+          }@else{
+            {{formalEducation.status}}: {{formalEducation.period}} ({{formalEducation.expectedGraduation}})
+          } </p>
+      }
+    </div>
+    <div class="home__education__left__bootcamp">
+      <h2>{{bootcamp}}</h2>
+      <p class="home__education__left__institution">{{bootcamps[0].institution}}</p>
+      <div class="home__education__left__bootcamp-list">
+        @for (bootcamp of bootcamps; track $index) {
+          <p>
+            <span
+            class="home__education__left__bootcamp__enterprise"
+            >
+            {{bootcamp.course.enterprise}}
+            </span>
+            -
+            <span>{{bootcamp.course.name}}</span>
+            •
+            <span class="home__education__left__bootcamp__duration">
+              {{bootcamp.duration}}
+            </span>
+          </p>
+        }
+      </div>
+    </div>
   </div>
-  <div class="bootcamps">
-    <h2>{{'home.body.education.titleBootcamp' | translate}}</h2>
-    @for (bootcamp of bootcamps; track $index) {
-      <h2>{{bootcamp.institution}}</h2>
-      <p>{{bootcamp.course}} • <span>{{bootcamp.duration}}</span></p>
-    }
+  <div class="home__education__right">
+    <div class="home__education__right__img-wrapper">
+      <img
+      class="home__education__right__img"
+      src="certificado.svg" alt="aa">
+    </div>
+
   </div>
 </section>
