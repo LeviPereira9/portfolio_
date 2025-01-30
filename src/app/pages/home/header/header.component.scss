@@ -41,7 +41,7 @@
 
     &__img-wrapper {
       position: relative;
-      display: inline-block; // ou block, dependendo do layout desejado
+      display: inline-block;
 
       &::after {
         content: '';
@@ -52,7 +52,7 @@
         bottom: 0;
         background: radial-gradient(circle, #322136 0%, transparent 100%);
         border-radius: 50%;
-        pointer-events: none; // Para garantir que o gradiente não interfira com interações
+        pointer-events: none;
       }
     }
 
