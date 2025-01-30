@@ -175,20 +175,35 @@
     "note": "Although I have experience with the mentioned technologies, I am a beginner in the field and recognize that there is always more to learn. I am continuously improving my skills and staying updated with the latest trends and best practices in the industry."
 }
 ,
-    "projects": [
+    "project":{
+      "title": "Projects",
+      "projects": [
         {
             "name": "Grandes Mentes",
-            "description": "This project uses the 'Pensador' API to display reflective and inspirational quotes from four famous philosophers.",
+            "description": "The 'Grandes Mentes' project aims to provide a space for reflection and inspiration by using the 'Pensador' API. This application randomly displays remarkable and thought-provoking quotes from four famous philosophers, offering wisdom and motivation. Simply request a new quote, and a fresh message will appear on the screen, enriching the user experience with profound and universal insights.",
             "links": {
                 "site": "https://project-grandesmentes.vercel.app/",
                 "github": "https://github.com/LeviPereira9/frases"
             },
+            "img": "gm.png",
             "technologiesUsed": [
-                "ReactJS",
-                "SASS"
+              "devicon-react-original",
+              "devicon-sass-original"
             ]
+        },{
+          "name":"Weather App",
+          "description": "This project allows users to track the weather in various cities around the world using the OpenWeatherMap API. With an intuitive interface, users can search for a city's name and instantly view detailed weather information, including temperature, atmospheric conditions, and other relevant data. The application is perfect for those who want to stay informed about the weather in different regions.",
+          "links":{
+            "site":"https://levipereira9.github.io/WeatherApp/",
+            "github":"https://github.com/LeviPereira9/WeatherApp"
+          },
+          "img":"weather.png",
+          "technologiesUsed":[
+            "devicon-javascript-plain",
+            "devicon-bootstrap-plain"
+          ]
         }
-    ],
+    ]},
     "contactMe": {
         "title": "Get in Touch",
         "message": "I’m always open to connecting! Whether you have a question, want to share ideas, or just say hello, my inbox is ready for you. Additionally, if you'd like to discuss job opportunities or tech-related projects, I’d be glad to hear from you. Feel free to drop me a message, and I’ll reply as soon as I can!"

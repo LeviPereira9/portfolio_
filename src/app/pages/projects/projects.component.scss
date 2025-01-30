@@ -1,0 +1,83 @@
+@import '../../scss/variables';
+
+.project{
+  padding-bottom: 32px;
+  margin-bottom: 18px;
+
+  &--title{
+    text-align: center;
+    font-size: 42px;
+    padding: 24px 0;
+  }
+
+  &__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 62px 0;
+
+    &--left{
+      width: 50%;
+
+      h1{
+        padding-bottom: 16px;
+      }
+
+      p{
+        text-align: justify;
+        padding-right: 18px;
+        padding-bottom: 16px;
+      }
+
+      button{
+        font-size: 17px;
+        font-weight: 500;
+        padding: 5xp 8px;
+        width: 90px;
+        background-color: rgb(65, 40, 65);
+        border: 1px solid $contrast-color;
+        border-radius: 5px;
+        margin-right: 8px;
+
+        a{
+          color: white;
+
+        }
+
+        &:hover{
+          background-color: $primary-color;
+          cursor: pointer;
+        }
+      }
+
+      &__icons{
+        display: flex;
+        gap: 18px;
+        margin-top: 14px;
+
+
+        .icon{
+          color: $primary-color;
+          font-size: 32px;
+        }
+      }
+
+    }
+
+    &--right{
+      width: 50%;
+    }
+  }
+}
+
+
+.img--wrapper{
+  max-width: 100%;
+}
+
+.img2{
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid $contrast-color;
+}

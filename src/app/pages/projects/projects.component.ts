@@ -2,15 +2,22 @@ import { Component } from '@angular/core';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 
 
-type project = {
+type projects = {
   name: string,
   description: string,
   links: {
     site: string,
     github: string
   },
+  img: string,
   technologiesUsed: string[]
 }
+
+type project = {
+  title: string,
+  projects:projects[]
+}
+
 
 @Component({
   selector: 'app-projects',
@@ -21,16 +28,18 @@ type project = {
 })
 export class ProjectsComponent {
 
-  projects: project[] = [
+  project: project = {
+    title: '',
+    projects: [
     {
       name: "",
       description: "",
       links: {
         site: "",
         github: ""
-      },
+      }, img: '',
       technologiesUsed: [""]}
-  ]
+  ]}
 
   constructor(private translate: TranslateService){}
 
@@ -43,7 +52,7 @@ export class ProjectsComponent {
   }
 
   getProjects(){
-    this.projects = this.translate.instant('projects');
+    this.project = this.translate.instant('project');
   }
 
 }

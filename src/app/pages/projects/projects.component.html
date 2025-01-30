@@ -1,7 +1,25 @@
 
-@for (project of projects; track $index) {
-  <h1>{{project.name}}</h1>
-  <p>{{project.description}}</p>
-  <button><a href="{{project.links.site}}" target="_blank">Site</a></button>
-  <button><a href="{{project.links.github}}" target="_blank">Github</a></button>
-}
+<section class="project">
+  <h1 class="project--title">{{project.title}}</h1>
+
+  @for (project of project.projects; track $index) {
+    <div class="project__container">
+      <div class="project__container--left">
+        <h1>{{project.name}}</h1>
+        <p>{{project.description}}</p>
+        <a href="{{project.links.site}}" target="_blank"><button>Site</button></a>
+        <a href="{{project.links.github}}" target="_blank"><button>Github</button></a>
+        <div class="project__container--left__icons">
+          @for (icon of project.technologiesUsed; track $index) {
+            <i class="{{icon}} icon" ></i>
+          }
+        </div>
+      </div>
+      <div class="project__container--right">
+        <div class="img--wrapper">
+          <img class="img2" src="imgs/{{project.img}}" alt="tste">
+        </div>
+      </div>
+    </div>
+  }
+</section>

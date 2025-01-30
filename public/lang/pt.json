@@ -170,20 +170,36 @@
         }],
         "note": "Embora tenha experiência com as tecnologias mencionadas, sou iniciante na área e reconheço que sempre há mais a aprender. Estou continuamente aprimorando minhas habilidades e me mantendo atualizado com as últimas tendências e melhores práticas do setor."
     },
-    "projects": [
+    "project": {
+      "title": "Projetos",
+      "projects":[
         {
             "name": "Grandes Mentes",
-            "description": "Este projeto utiliza a API do 'Pensador' para exibir frases reflexivas e inspiradoras de quatro filósofos famosos.",
+            "description": "O projeto 'Grandes Mentes' tem como objetivo oferecer um espaço de reflexão e inspiração para os usuários, utilizando a API do site 'Pensador'. Por meio desta aplicação, frases marcantes e reflexivas de quatro filósofos famosos são apresentadas de forma aleatória, trazendo sabedoria e motivação. Basta solicitar uma nova citação para que uma nova mensagem seja exibida na tela, enriquecendo a experiência do usuário com pensamentos profundos e universais.",
             "links": {
                 "site": "https://project-grandesmentes.vercel.app/",
                 "github": "https://github.com/LeviPereira9/frases"
             },
+            "img": "gm.png"
+            ,
             "technologiesUsed": [
-                "ReactJS",
-                "SASS"
+              "devicon-react-original",
+              "devicon-sass-original"
             ]
+        },{
+          "name":"Weather App",
+          "description": "Este projeto permite que os usuários acompanhem o clima em diversas cidades ao redor do mundo utilizando a API OpenWeatherMap. Com uma interface intuitiva, o usuário pode buscar pelo nome de uma cidade e, instantaneamente, visualizar informações detalhadas sobre o clima local, incluindo temperatura, condições atmosféricas e outros dados relevantes. A aplicação é ideal para quem deseja se manter informado sobre o clima em diferentes regiões.",
+          "links":{
+            "site":"https://levipereira9.github.io/WeatherApp/",
+            "github":"https://github.com/LeviPereira9/WeatherApp"
+          },
+          "img":"weather.png",
+          "technologiesUsed":[
+            "devicon-javascript-plain",
+            "devicon-bootstrap-plain"
+          ]
         }
-    ],
+    ]},
     "contactMe": {
         "title": "Entre em contato",
         "message": "Estou sempre aberto a conversar! Se você tem uma dúvida, quer trocar ideias ou apenas dizer 'oi', minha caixa de entrada está à disposição. Além disso, caso tenha interesse em discutir oportunidades de emprego ou projetos relacionados à tecnologia, ficarei feliz em ouvir você. Sinta-se à vontade para me enviar uma mensagem, e responderei o mais rápido possível!"
