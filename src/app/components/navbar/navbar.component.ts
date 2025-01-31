@@ -62,6 +62,20 @@ export class NavbarComponent {
   @HostListener('window:scroll',[])
   onWindowScroll(){
     this.isScrolled = window.scrollY > 5;
+
+
+  }
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    const dropdownMenu = document.querySelector('.navbar__dropdown'); // Seleciona o menu dropdown
+    const toggleButton = document.querySelector('.navbar__content__mobile-toggle'); // Seleciona o botão de toggle
+
+    // Verifica se o clique foi fora do menu e do botão de toggle
+    if (dropdownMenu && !dropdownMenu.contains(event.target as Node) &&
+        toggleButton && !toggleButton.contains(event.target as Node)) {
+      this.isMenuOpen = false; // Fecha o menu
+    }
   }
 
   //Inicia escolhendo o idioma e em caso de mudança.
@@ -78,3 +92,5 @@ export class NavbarComponent {
     this.navbar = this.translate.instant('navbar');
   }
 }
+
+
