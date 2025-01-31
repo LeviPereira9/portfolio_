@@ -3,7 +3,7 @@
   <h1 class="project--title">{{project.title}}</h1>
 
   @for (project of project.projects; track $index) {
-    <div class="project__container">
+    <div class="project__container" [class.last-item]="$last">
       <div class="project__container--right">
         <div class="img--wrapper">
           <img class="img2" src="imgs/{{project.img}}" alt="tste">
@@ -20,7 +20,6 @@
           }
         </div>
       </div>
-
     </div>
   }
 </section>

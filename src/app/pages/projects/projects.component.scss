@@ -18,8 +18,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid white;
     padding: 62px 0;
     gap: 21px;
+
+    &.last-item{
+      border-bottom: none;
+    }
 
     &--left{
       width: 50%;
