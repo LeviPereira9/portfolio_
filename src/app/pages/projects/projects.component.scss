@@ -16,6 +16,7 @@
     align-items: center;
     border-bottom: 1px solid white;
     padding: 62px 0;
+    gap: 21px;
 
     &--left{
       width: 50%;
@@ -26,7 +27,6 @@
 
       p{
         text-align: justify;
-        padding-right: 18px;
         padding-bottom: 16px;
       }
 
@@ -68,6 +68,21 @@
     &--right{
       width: 50%;
     }
+
+
+  }
+  @media (max-width: 768px){
+    flex-direction: column;
+
+    &__container{
+      flex-direction: column;
+
+      &--left, &--right{
+        width: 100%;
+      }
+
+    }
+
   }
 }
 

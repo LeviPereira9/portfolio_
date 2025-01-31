@@ -1,11 +1,10 @@
 .header {
-
   padding-bottom: 18px;
   margin-bottom: 18px;
   border-bottom: 1px solid white;
 
   font-size: 30px;
-  padding: 16px 0px;
+  padding: 16px 0;
 
   text-align: left;
   word-wrap: break-word;
@@ -14,29 +13,35 @@
   justify-content: space-between;
   align-items: center;
 
-  &__left{
+  &__left {
     max-width: 50%;
+
     &__text {
       display: inline-block;
       padding-bottom: 100px;
+      height: 35px;
+
+      &__i{
+        padding-right: 10px;
+      }
 
       &__word {
         border-right: 3px solid white;
         white-space: nowrap;
         overflow: hidden;
         border-right: 3px solid white;
-        animation:
-        blink 0.5s step-end infinite alternate;
+        animation: blink 0.5s step-end infinite alternate;
 
         @keyframes blink {
-          50% { border-color: transparent; }
+          50% {
+            border-color: transparent;
+          }
         }
-
       }
     }
   }
 
-  &__right{
+  &__right {
     max-width: 45%;
 
     &__img-wrapper {
@@ -56,12 +61,47 @@
       }
     }
 
-    &__img{
+    &__img {
       max-width: 100%;
       position: relative;
       z-index: 1;
     }
   }
 
+  // Responsividade
+  @media (max-width: 768px) { //Telas médias.
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
 
+    &__left {
+      max-width: 100%;
+
+      &__text{
+        &__i{
+          display: block;
+        }
+      }
+    }
+
+    &__right {
+      max-width: 100%;
+      margin-top: 16px;
+
+      &__img {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @media (max-width: 480px) { //Telas pequenas.
+    font-size: 24px;
+
+    &__right {
+      &__img {
+        max-width: 90%;
+      }
+    }
+  }
 }

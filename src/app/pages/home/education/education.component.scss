@@ -8,6 +8,8 @@
   margin-bottom: 18px;
   border-bottom: 1px solid white;
 
+  text-align: left;
+
 
 
   &__left{
@@ -64,6 +66,28 @@
       width: 100%;
       position: relative;
       z-index: 1;
+    }
+  }
+
+  // Responsividade para telas menores (mobile/tablet)
+  @media (max-width: 768px) {
+    flex-direction: column; // Coloca o conteúdo em coluna
+
+    &__left {
+      max-width: 100%; // Ocupa toda a largura
+
+
+    }
+
+    &__right {
+      max-width: 100%; // Ocupa toda a largura
+      order: -1; // Coloca a imagem acima do conteúdo
+      margin-bottom: 20px; // Espaço entre a imagem e o conteúdo
+      text-align: center; // Centraliza a imagem
+
+      &__img{
+        width: 85%;
+      }
     }
   }
 

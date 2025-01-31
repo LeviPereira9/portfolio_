@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { NavbarComponent } from "./components/navbar/navbar.component";
@@ -8,8 +8,6 @@ import { Container, Engine } from "@tsparticles/engine";
 import { NgParticlesService } from "@tsparticles/angular";
 import { loadSlim } from '@tsparticles/slim';
 import { FooterComponent } from "./components/footer/footer.component";
-import { HomeComponent } from "./pages/home/home.component";
-import { SkillsComponent } from './pages/skills/skills.component';
 
 
 @Component({
@@ -32,28 +30,9 @@ export class AppComponent {
   id:string = 'tsparticles';
   particlesJson:string = './particles.json'
 
-  constructor(
-    private translate: TranslateService,
-    private readonly ngParticlesService: NgParticlesService,
-    ) {
-    // Configura os idiomas disponíveis
-    this.translate.addLangs(['en', 'pt']);
-    // Define o idioma padrão como inglês
-    this.translate.setDefaultLang('en');
+  constructor(private readonly ngParticlesService: NgParticlesService,) {}
 
-    // Usa o idioma do navegador se disponível; caso contrário, usa o idioma padrão
-    const browserLang = this.translate.getBrowserLang();
 
-    // Verifica se o idioma do navegador é válido e se não for, usa 'en' como fallback
-    const langToUse = browserLang && ['en', 'pt'].includes(browserLang) ? browserLang : 'en';
-    this.translate.use(langToUse);
-
-  }
-
-  // Método para alternar entre idiomas
-  switchLanguage(language: string) {
-    this.translate.use(language);
-  }
 
 
   ngOnInit(): void {

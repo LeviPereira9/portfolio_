@@ -1,0 +1,206 @@
+{
+  "navbar": {
+      "home": "首页",
+      "skills": "技能",
+      "projects": "项目",
+      "contactMe": "联系我"
+  },
+  "home": {
+      "header": {
+          "title": "你好，我叫Levi",
+          "text": "我是一个",
+          "words": [
+              "Web技术爱好者", "全栈开发者"
+          ]
+      },
+      "body": {
+          "about": {
+              "title": "关于我",
+              "text": "我是Fatec Carapicuíba的分析与系统开发（ADS）专业的学生，热爱技术和编程。我不断寻求新的挑战，以学习、进步并为创新解决方案做出贡献。我在前端和后端开发方面有经验，并且熟悉现代DevOps实践。目前，我正在探索机器学习（ML）领域，了解模型的创建、训练和工作原理，并熟悉该领域广泛使用的工具和库。我重视团队合作，并始终愿意在具有挑战性的项目中贡献我的技能。",
+              "beyondTech": "个人兴趣",
+              "hobbies": [
+                  "阅读",
+                  "写书评",
+                  "游戏"
+              ]
+          },
+          "professionalExperience": [
+              {
+                  "enterprise": "Boa Vista SCPC",
+                  "position": "办公室助理",
+                  "duration": "1年",
+                  "responsibilities": {
+                      "title": "工作职责",
+                      "description": "我负责为我的部门提供支持，主要职责包括：",
+                      "tasks": [
+                          "管理和分析用户对FAQ页面的反馈，识别主要问题并提出改进建议。",
+                          "进行与FAQ相关的数据分析，以了解其表现并识别改进机会。",
+                          "每周创建一个横幅，突出显示用户收到的最佳表扬，作为对员工的认可。",
+                          "根据需要提供其他任务支持，确保运营顺利进行。"
+                      ]
+                  }
+              }
+          ],
+          "education": {
+              "titleEducation": "教育",
+              "titleBootcamp": "培训课程",
+              "formalEducation": [
+                  {
+                      "institution": "Fatec Carapicuíba",
+                      "degree": "分析与系统开发",
+                      "status": "在读",
+                      "startedAt": "2023年8月",
+                      "endedAt": "",
+                      "period": "第三学期",
+                      "expectedGraduation": "预计毕业时间：2026年8月"
+                  },
+                  {
+                      "institution": "ETEC Carapicuíba",
+                      "degree": "行政管理技术员",
+                      "status": "已毕业",
+                      "startedAt": "2019年2月",
+                      "endedAt": "2020年8月",
+                      "period": "",
+                      "expectedGraduation": "已毕业"
+                  }
+              ],
+              "bootcamps": [
+                  {
+                      "institution": "Digital Innovation One",
+                      "course": {
+                        "enterprise": "Deal",
+                        "name": "Spring Boot和Angular"
+                      },
+                      "duration": "91小时",
+                      "year": "2024年"
+                  },
+                  {
+                      "institution": "Digital Innovation One",
+                      "course": {
+                        "enterprise": "Sysvision",
+                        "name": "使用Power BI进行数据分析"
+                      },
+                      "duration": "82小时",
+                      "year": "2024年"
+                  },
+                  {
+                      "institution": "Digital Innovation One",
+                      "course": {
+                        "enterprise": "Santander Bootcamp 2023",
+                        "name": "Java后端开发"
+                      },
+                      "duration": "88小时",
+                      "year": "2023年"
+                  },
+                  {
+                    "institution": "Digital Innovation One",
+                    "course": {
+                      "enterprise": "Nexa",
+                      "name": "在AWS上使用Claude进行提示工程"
+                    },
+                    "duration": "10小时",
+                    "year": "2024年"
+                },
+                  {
+                    "institution": "Digital Innovation One",
+                    "course": {
+                      "enterprise": "Nexa",
+                      "name": "在AWS上使用AI进行图像和文本的高级分析"
+                    },
+                    "duration": "10小时",
+                    "year": "2024年"
+                }, {
+                  "institution": "Digital Innovation One",
+                  "course": {
+                    "enterprise": "BairesDev",
+                    "name": "机器学习实践者"
+                  },
+                  "duration": "96小时",
+                  "year": "2024年"
+              }
+              ]
+          }
+      }
+  },
+  "skills": {
+      "list": [ {
+          "title":"前端",
+          "description": "具有创建响应式和动态用户界面的经验，使用最佳实践和现代框架。",
+          "icons": [
+            "devicon-html5-plain-wordmark",
+            "devicon-css3-plain-wordmark",
+            "devicon-javascript-plain",
+            "devicon-sass-original",
+            "devicon-bootstrap-plain-wordmark",
+            "devicon-react-original-wordmark",
+            "devicon-typescript-plain",
+            "devicon-angular-plain-wordmark"
+          ]
+      },
+      {
+          "title": "后端",
+          "description": "具有开发API系统的经验",
+          "icons":[
+            "devicon-java-plain-wordmark",
+            "devicon-spring-original-wordmark",
+            "devicon-azuresqldatabase-plain",
+            "devicon-mysql-plain-wordmark",
+            "devicon-python-plain-wordmark",
+            "devicon-pandas-plain-wordmark"
+          ]
+      },
+       {
+          "title": "DevOps",
+          "description": "熟悉环境自动化和版本控制，以确保敏捷和集成的工作流程。",
+          "icons":[
+            "devicon-docker-plain-wordmark",
+            "devicon-git-plain-wordmark",
+            "devicon-github-original-wordmark"
+          ]
+      },
+      {
+        "title": "机器学习",
+        "description": "熟悉机器学习技术和工具的应用，包括用于预测分析和统计建模的线性回归。能够利用生成式AI的能力，进行提示工程，并使用AWS SageMaker Canvas等平台集成模型。在实际项目中具有实践经验，如面部识别，用于分类和检测视觉数据中的模式。",
+        "icons":[
+          "devicon-tensorflow-original-wordmark",
+          "devicon-keras-plain-wordmark",
+          "devicon-scikitlearn-plain",
+          "devicon-amazonwebservices-plain-wordmark"
+        ]
+      }],
+      "note": "尽管我对上述技术有经验，但我仍处于初级阶段，并认识到总有更多东西需要学习。我正在不断提高自己的技能，并紧跟行业的最新趋势和最佳实践。"
+  },
+  "project": {
+    "title": "项目",
+    "projects":[
+      {
+          "name": "伟大的思想",
+          "description": "“伟大的思想”项目旨在为用户提供一个反思和启发的空间，使用“Pensador”网站的API。通过该应用程序，随机展示四位著名哲学家的深刻和反思性名言，带来智慧和动力。只需请求新的引用，屏幕上就会显示新的信息，丰富用户的体验，带来深刻和普遍的思想。",
+          "links": {
+              "site": "https://project-grandesmentes.vercel.app/",
+              "github": "https://github.com/LeviPereira9/frases"
+          },
+          "img": "gm.png",
+          "technologiesUsed": [
+            "devicon-react-original",
+            "devicon-sass-original"
+          ]
+      },{
+        "name":"天气应用",
+        "description": "该项目允许用户使用OpenWeatherMap API跟踪世界各地不同城市的天气。通过直观的界面，用户可以搜索城市名称，并立即查看当地的详细天气信息，包括温度、大气条件和其他相关数据。该应用程序非常适合希望了解不同地区天气的人。",
+        "links":{
+          "site":"https://levipereira9.github.io/WeatherApp/",
+          "github":"https://github.com/LeviPereira9/WeatherApp"
+        },
+        "img":"weather.png",
+        "technologiesUsed":[
+          "devicon-javascript-plain",
+          "devicon-bootstrap-plain"
+        ]
+      }
+  ]},
+  "contactMe": {
+      "title": "联系我",
+      "message": "我随时欢迎交流！如果你有任何问题、想交换想法或只是打个招呼，我的收件箱随时为你开放。此外，如果你对工作机会或与技术相关的项目感兴趣，我很乐意听取你的意见。请随时给我发送消息，我会尽快回复！"
+  }
+}

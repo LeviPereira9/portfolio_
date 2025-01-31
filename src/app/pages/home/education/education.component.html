@@ -6,9 +6,9 @@
         <p class="home__education__left__institution">{{formalEducation.institution}}</p>
         <p class="home__education__left__degree">{{formalEducation.degree}}
           @if (formalEducation.status == 'Concluído' || formalEducation.status == "Completed") {
-            ({{formalEducation.startedAt}} - {{formalEducation.endedAt}})
+            •  ({{formalEducation.startedAt}} - {{formalEducation.endedAt}})
           }@else{
-            {{formalEducation.status}}: {{formalEducation.period}} ({{formalEducation.expectedGraduation}})
+            <p>{{formalEducation.status}}: {{formalEducation.period}} • ({{formalEducation.expectedGraduation}})</p>
           } </p>
       }
     </div>

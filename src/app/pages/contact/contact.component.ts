@@ -47,7 +47,11 @@ export class ContactComponent {
     if (currentLang === 'pt') {
       subject = encodeURIComponent('Solicitação de Contato');
       body = encodeURIComponent('Olá, gostaria de entrar em contato!');
-    } else {
+    } else if (currentLang === 'zh') {
+      subject = encodeURIComponent('联系请求');
+      body = encodeURIComponent('你好，我想联系你！');
+    }
+    else {
       subject = encodeURIComponent('Contact Request');
       body = encodeURIComponent('Hello, I would like to get in touch!');
     }

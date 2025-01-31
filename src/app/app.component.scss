@@ -7,3 +7,9 @@
   padding-bottom: 16px;
   border-bottom: 1px solid white;
 }
+
+@media (max-width: 768px){
+  .content{
+    margin: 15px 30px;
+  }
+}

@@ -3,6 +3,10 @@
     <span class="navbar__content__logo">
       <a href="#">LEVI</a>
     </span>
+
+
+
+    <!-- Menu principal -->
     <ul class="navbar__content__menu">
       <li><a
         routerLink="/"
@@ -13,18 +17,64 @@
       </a></li>
       <li><a
         routerLink="/skills"
-        routerLinkActive="active"  >
-        {{ navbar.skills}}
+        routerLinkActive="active">
+        {{ navbar.skills }}
       </a></li>
       <li><a
         routerLink="/projects"
-        routerLinkActive="active" >
-        {{ navbar.projects}}
+        routerLinkActive="active">
+        {{ navbar.projects }}
       </a></li>
       <li><a
         routerLink="/contact"
-        routerLinkActive="active" >
-        {{ navbar.contactMe}}
+        routerLinkActive="active">
+        {{ navbar.contactMe }}
+      </a></li>
+    </ul>
+
+    <!-- Ícone de mudança de idioma -->
+    <div class="navbar__content__language">
+      <button (click)="switchLanguage('pt')">
+        <span class="flag-icon flag-icon-br"></span>
+      </button>
+      <button (click)="switchLanguage('en')">
+        <span class="flag-icon flag-icon-us"></span>
+      </button>
+      <button (click)="switchLanguage('zh')">
+        <span class="flag-icon flag-icon-cn"></span>
+      </button>
+    </div>
+
+    <!-- Ícone do menu mobile -->
+    <div class="navbar__content__mobile-toggle" (click)="toggleMenu()">
+      <i class="bi bi-list"></i>
+    </div>
+  </div>
+
+  <!-- Menu dropdown para mobile/tablet -->
+  <div class="navbar__dropdown" [class.navbar__dropdown--open]="isMenuOpen">
+    <ul>
+      <li><a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >
+        {{ navbar.home }}
+      </a></li>
+      <li><a
+        routerLink="/skills"
+        routerLinkActive="active">
+        {{ navbar.skills }}
+      </a></li>
+      <li><a
+        routerLink="/projects"
+        routerLinkActive="active">
+        {{ navbar.projects }}
+      </a></li>
+      <li><a
+        routerLink="/contact"
+        routerLinkActive="active">
+        {{ navbar.contactMe }}
       </a></li>
     </ul>
   </div>

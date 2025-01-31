@@ -1,8 +1,11 @@
 <section class="contact">
   <h1>{{contact.title}}</h1>
   <p>{{contact.message}}</p>
-  <i class="bi bi-envelope-arrow-up-fill icon"></i>
+  <i
+  (click)="sendEmail()"
+  class="bi bi-envelope-arrow-up-fill icon"
+  ></i>
   <div class="contact__img-wrapper">
-    <img (click)="sendEmail()" class="contact__img-wrapper__img" src="svg/contataae.svg" alt="contact">
+    <img  class="contact__img-wrapper__img" src="svg/contataae.svg" alt="contact">
   </div>
 </section>
