@@ -9,6 +9,7 @@
   background-color: $particles-color;
   transition: background-color 0.3s ease;
 
+
   &--scrolled {
     background-color: #402d46d7;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -77,13 +78,21 @@
 
   &__dropdown {
     display: none;
-    background-color: $particles-color;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     padding: 10px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: $particles-color;
+    transition: background-color 0.3s ease;
+    border-top: 1px solid $alsoContrast-color;
+    border-bottom: 1px solid $alsoContrast-color;
+
+    &--scrolled {
+      background-color: #402d46d7;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
 
     ul {
       list-style: none;

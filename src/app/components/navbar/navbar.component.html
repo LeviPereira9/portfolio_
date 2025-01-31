@@ -52,7 +52,10 @@
   </div>
 
   <!-- Menu dropdown para mobile/tablet -->
-  <div class="navbar__dropdown" [class.navbar__dropdown--open]="isMenuOpen">
+  <div class="navbar__dropdown"
+  [class.navbar__dropdown--open]="isMenuOpen"
+  [class.navbar__dropdown--scrolled]="isScrolled"
+  >
     <ul>
       <li><a
         routerLink="/"
