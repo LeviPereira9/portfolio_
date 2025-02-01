@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { NgxParticlesModule } from '@tsparticles/angular';
-import { Container, Engine } from "@tsparticles/engine";
 import { NgParticlesService } from "@tsparticles/angular";
-import { loadSlim } from '@tsparticles/slim';
 import { FooterComponent } from "./components/footer/footer.component";
-import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import { LoadingService } from './services/LoadingService';
+import { ChangeDetectorRef } from '@angular/core';
 
 
 
@@ -16,7 +15,6 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
   selector: 'app-root',
   standalone: true,
   imports: [
-    NgxSkeletonLoaderModule,
     RouterOutlet,
     CommonModule,
     TranslateModule,
@@ -35,20 +33,21 @@ export class AppComponent {
 
   conteudoCarregado:boolean = false;
 
-  constructor(private readonly ngParticlesService: NgParticlesService,) {}
+  constructor(
+    private readonly ngParticlesService: NgParticlesService,
+    private loadingService: LoadingService,
+    private cdr: ChangeDetectorRef
+  ) {}
 
 
-  ngOnInit(): void {
-    //Inicia o TsParticles
-    this.ngParticlesService.init(async (engine: Engine) => {
-      await loadSlim(engine);
-    });
+  async ngOnInit(): Promise<void> {
+   //Verifica o carregamento de todos os recursos
+   await this.loadingService.verificarCarregamento();
+
+   //Libera o conteúdo
+   this.conteudoCarregado = this.loadingService.estaCarregado();
+   this.cdr.detectChanges(); //Forçar a atualização da view
   }
 
-  //Só em desenvolvimento, pra ve se ta o fino.
-  particlesLoaded(container: Container): void {
-    setTimeout(() => {
-      this.conteudoCarregado = true;
-    }, 1500);
-  }
+
 }
