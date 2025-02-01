@@ -185,7 +185,7 @@
                 "site": "https://project-grandesmentes.vercel.app/",
                 "github": "https://github.com/LeviPereira9/frases"
             },
-            "img": "gm.png",
+            "img": "gm-min.png",
             "technologiesUsed": [
               "devicon-react-original",
               "devicon-sass-original"
@@ -197,7 +197,7 @@
             "site":"https://levipereira9.github.io/WeatherApp/",
             "github":"https://github.com/LeviPereira9/WeatherApp"
           },
-          "img":"weather.png",
+          "img":"weather-min.png",
           "technologiesUsed":[
             "devicon-javascript-plain",
             "devicon-bootstrap-plain"

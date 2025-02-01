@@ -1,3 +1,5 @@
+@import '../../../scss/variables';
+
 .header {
   padding-bottom: 18px;
   margin-bottom: 18px;
@@ -13,6 +15,7 @@
   justify-content: space-between;
   align-items: center;
 
+  //Text Side
   &__left {
     max-width: 50%;
 
@@ -41,12 +44,13 @@
     }
   }
 
+  //Image Side
   &__right {
-    max-width: 45%;
-
     &__img-wrapper {
       position: relative;
       display: inline-block;
+      background-color: transparent;
+      overflow: hidden;
 
       &::after {
         content: '';
@@ -65,10 +69,12 @@
       max-width: 100%;
       position: relative;
       z-index: 1;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
     }
   }
 
-  // Responsividade
+  //Responsividade.
   @media (max-width: 768px) { //Telas médias.
     flex-direction: column;
     align-items: flex-start;

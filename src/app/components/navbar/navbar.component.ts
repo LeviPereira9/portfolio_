@@ -25,7 +25,7 @@ export class NavbarComponent {
   isScrolled:boolean = false;
   isMenuOpen:boolean = false;
 
-  //Placeholder
+  //Text Placeholder
   navbar:navbar = {
     home: "",
     skills: "",

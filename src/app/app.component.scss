@@ -1,3 +1,5 @@
+@import './scss/variables';
+
 .space{
   padding-bottom: 75px;
 }
@@ -13,3 +15,75 @@
     margin: 15px 30px;
   }
 }
+
+.loading{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: $particles-color;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+
+  &__container{
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+    &__loader1 {
+      height: 60px;
+      aspect-ratio: 1;
+      --c:no-repeat linear-gradient(#514b82 0 0);
+      background:
+        var(--c),var(--c),
+        var(--c),var(--c),
+        var(--c),var(--c);
+      animation:
+        l34-1 2s infinite alternate,
+        l34-2 2s infinite alternate;
+
+        @keyframes l34-1 {
+          0%,20%   {background-size:20px 20px}
+          40%,60%  {background-size:100% 20px}
+          80%,100% {background-size:20px 20px}
+        }
+        @keyframes l34-2 {
+          0%,40%  {background-position: 0   0,100% 0, 50% 50%, 50% 50%, 0   100%,100% 100%}
+          60%,100%{background-position: 50% 0,50%  0, 0   50%,100% 50%, 50% 100%,50%  100%}
+        }
+    }
+
+    &__loader2 {
+      width: 120px;
+      height: 22px;
+      border-radius: 20px;
+      color: #514b82;
+      border: 2px solid;
+      position: relative;
+
+      &::before{
+        content: "";
+        position: absolute;
+        margin: 2px;
+        inset: 0 100% 0 0;
+        border-radius: inherit;
+        background: currentColor;
+        animation: l6 2s infinite;
+      }
+
+      @keyframes l6 {
+        100% {inset:0}
+    }
+    }
+
+
+  }
+
+}
+
+

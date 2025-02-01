@@ -26,6 +26,7 @@
       border-bottom: none;
     }
 
+    //Text Side
     &--left{
       width: 50%;
 
@@ -73,8 +74,27 @@
 
     }
 
+    //Img Side
     &--right{
       width: 50%;
+
+      .img--wrapper{
+        position: relative;
+        display: inline-block;
+        background-color: transparent;
+        overflow: hidden;
+      }
+
+      .img2{
+        max-width: 100%;
+        position: relative;
+        z-index: 1;
+        opacity: 0;
+        border-radius: 8px;
+        border: 1px solid $contrast-color;
+        transition: opacity 0.3s ease-in-out;
+      }
+
     }
 
 
@@ -95,12 +115,4 @@
 }
 
 
-.img--wrapper{
-  max-width: 100%;
-}
 
-.img2{
-  max-width: 100%;
-  border-radius: 8px;
-  border: 1px solid $contrast-color;
-}

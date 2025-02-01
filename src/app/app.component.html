@@ -1,14 +1,24 @@
-<app-navbar/>
-<div class="space"></div>
+
 <ngx-particles
   [id]="id"
   [url]="particlesJson"
   (particlesLoaded)="particlesLoaded($event)"
 ></ngx-particles>
 
-<div class="content">
+<div *ngIf="conteudoCarregado; else loading" class="content">
+  <app-navbar/>
+  <div class="space"></div>
   <router-outlet />
-
+  <app-footer/>
 </div>
 
-<app-footer/>
+<ng-template #loading>
+  <div class="loading">
+    <div class="loading__container">
+      <div class="loading__container__loader1"></div>
+      <div class="loading__container__loader2"></div>
+    </div>
+  </div>
+</ng-template>
+
+

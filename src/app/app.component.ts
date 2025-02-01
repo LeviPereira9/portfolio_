@@ -8,12 +8,15 @@ import { Container, Engine } from "@tsparticles/engine";
 import { NgParticlesService } from "@tsparticles/angular";
 import { loadSlim } from '@tsparticles/slim';
 import { FooterComponent } from "./components/footer/footer.component";
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
+    NgxSkeletonLoaderModule,
     RouterOutlet,
     CommonModule,
     TranslateModule,
@@ -30,9 +33,9 @@ export class AppComponent {
   id:string = 'tsparticles';
   particlesJson:string = './particles.json'
 
+  conteudoCarregado:boolean = false;
+
   constructor(private readonly ngParticlesService: NgParticlesService,) {}
-
-
 
 
   ngOnInit(): void {
@@ -44,6 +47,8 @@ export class AppComponent {
 
   //Só em desenvolvimento, pra ve se ta o fino.
   particlesLoaded(container: Container): void {
-    console.log(container);
+    setTimeout(() => {
+      this.conteudoCarregado = true;
+    }, 1500);
   }
 }

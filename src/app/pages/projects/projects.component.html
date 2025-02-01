@@ -6,7 +6,8 @@
     <div class="project__container" [class.last-item]="$last">
       <div class="project__container--right">
         <div class="img--wrapper">
-          <img class="img2" src="imgs/{{project.img}}" alt="tste">
+          <img class="img2" src="imgs/{{project.img}}" alt="tste" loading="lazy"
+          onload="this.style.opacity=1">
         </div>
       </div>
       <div class="project__container--left">
