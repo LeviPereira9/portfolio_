@@ -10,7 +10,7 @@
   border-bottom: 1px solid white;
 
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 1s ease-in-out;
 
 
 
@@ -39,9 +39,10 @@
   transition: opacity 0.5s ease-in-out;
 
   &[hidden] {
-    opacity: 0;
     pointer-events: none;
+    display: none;
   }
+
 
   &__container{
     display: flex;
