@@ -1,12 +1,13 @@
 <section class="skills">
   @for (skill of skills; track $index) {
-    <h1 class="skills__title">{{skill.title}}</h1>
-    <p class="skills__description">{{skill.description}}</p>
-    <div class="skills__container">
+    @if (skill.title != "机器学习" && skill.title != "Machine Learning") {
+      <h1 class="skills__title">{{skill.title}}</h1>
+     <p class="skills__description">{{skill.description}}</p>
+      <div class="skills__container">
       @for (icon of skill.icons; track $index) {
         <i class="{{icon}} skills__container__icon"></i>
       }
     </div>
+    }
   }
-  <p>Obs.: {{note}}</p>
 </section>
