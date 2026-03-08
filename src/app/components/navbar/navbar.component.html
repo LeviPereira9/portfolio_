@@ -4,32 +4,32 @@
       <a href="#">LEVI</a>
     </span>
 
-
-
     <!-- Menu principal -->
     <ul class="navbar__content__menu">
-      <li><a
-        routerLink="/"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
+      <li>
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
         >
-        {{ navbar.home }}
-      </a></li>
-      <li><a
-        routerLink="/skills"
-        routerLinkActive="active">
-        {{ navbar.skills }}
-      </a></li>
-      <li><a
-        routerLink="/projects"
-        routerLinkActive="active">
-        {{ navbar.projects }}
-      </a></li>
-      <li><a
-        routerLink="/contact"
-        routerLinkActive="active">
-        {{ navbar.contactMe }}
-      </a></li>
+          {{ navbar.home }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/skills" routerLinkActive="active">
+          {{ navbar.skills }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/projects" routerLinkActive="active">
+          {{ navbar.projects }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/contact" routerLinkActive="active">
+          {{ navbar.contactMe }}
+        </a>
+      </li>
     </ul>
 
     <!-- Ícone de mudança de idioma -->
@@ -40,9 +40,9 @@
       <button (click)="switchLanguage('en')">
         <span class="flag-icon flag-icon-us"></span>
       </button>
-      <button (click)="switchLanguage('zh')">
+      <!--       <button (click)="switchLanguage('zh')">
         <span class="flag-icon flag-icon-cn"></span>
-      </button>
+      </button> -->
     </div>
 
     <!-- Ícone do menu mobile -->
@@ -52,33 +52,36 @@
   </div>
 
   <!-- Menu dropdown para mobile/tablet -->
-  <div class="navbar__dropdown"
-  [class.navbar__dropdown--open]="isMenuOpen"
-  [class.navbar__dropdown--scrolled]="isScrolled"
+  <div
+    class="navbar__dropdown"
+    [class.navbar__dropdown--open]="isMenuOpen"
+    [class.navbar__dropdown--scrolled]="isScrolled"
   >
     <ul>
-      <li><a
-        routerLink="/"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
+      <li>
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
         >
-        {{ navbar.home }}
-      </a></li>
-      <li><a
-        routerLink="/skills"
-        routerLinkActive="active">
-        {{ navbar.skills }}
-      </a></li>
-      <li><a
-        routerLink="/projects"
-        routerLinkActive="active">
-        {{ navbar.projects }}
-      </a></li>
-      <li><a
-        routerLink="/contact"
-        routerLinkActive="active">
-        {{ navbar.contactMe }}
-      </a></li>
+          {{ navbar.home }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/skills" routerLinkActive="active">
+          {{ navbar.skills }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/projects" routerLinkActive="active">
+          {{ navbar.projects }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/contact" routerLinkActive="active">
+          {{ navbar.contactMe }}
+        </a>
+      </li>
     </ul>
   </div>
 </nav>

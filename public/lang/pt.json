@@ -1,206 +1,236 @@
 {
-    "navbar": {
-        "home": "Início",
-        "skills": "Habilidades",
-        "projects": "Projetos",
-        "contactMe": "Contato"
+  "navbar": {
+    "home": "Início",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contactMe": "Contato"
+  },
+  "home": {
+    "header": {
+      "title": "Olá, meu nome é Levi",
+      "text": "Sou um",
+      "words": ["Entusiasta de Tecnologias Web", "Desenvolvedor Full-Stack"]
     },
-    "home": {
-        "header": {
-            "title": "Olá, meu nome é Levi",
-            "text": "Sou um",
-            "words": [
-                "Entusiasta de Tecnologias Web", "Desenvolvedor Full-Stack"
+    "body": {
+      "about": {
+        "title": "Sobre mim",
+        "text": "Sou estudante de Análise e Desenvolvimento de Sistemas (ADS) na Fatec Carapicuíba, apaixonado por tecnologia e programação. Busco constantemente novos desafios que me permitam aprender, evoluir e contribuir com soluções inovadoras. Possuo experiência em desenvolvimento front-end e back-end, além de conhecimento em práticas modernas de DevOps. Atualmente, estou explorando o campo do Machine Learning (ML), com entendimento sobre o funcionamento, criação e treinamento de modelos, bem como familiaridade com ferramentas e bibliotecas amplamente utilizadas na área. Valorizo o trabalho em equipe e estou sempre disposto a agregar minhas habilidades em projetos desafiadores.",
+        "beyondTech": "Interesses Pessoais",
+        "hobbies": [
+          "Leitura (tecnologia, inovação e fantasia)",
+          "Audiofilia e equipamentos de áudio",
+          "Jogos eletrônicos",
+          "Aprendizado de mandarim"
+        ]
+      },
+      "professionalExperience": [
+        {
+          "enterprise": "Boa Vista SCPC",
+          "position": "Auxiliar de Escritório",
+          "duration": "1 ano",
+          "responsibilities": {
+            "title": "Atividade desempenhada",
+            "description": "Atuava como suporte para o meu setor, com as seguintes responsabilidades: ",
+            "tasks": [
+              "Gerenciar e analisar os feedbacks dos usuários sobre a página de FAQ, identificando os principais pontos e sugerindo melhorias.",
+              "Realizar análise de dados relacionados à FAQ, para entender o desempenho e identificar oportunidades de melhoria.",
+              "Criar um banner semanal destacando o melhor elogio recebido dos usuários, como reconhecimento para os funcionários.",
+              "Oferecer suporte em outras tarefas conforme necessário, garantindo o bom andamento das operações."
             ]
-        },
-        "body": {
-            "about": {
-                "title": "Sobre mim",
-                "text": "Sou estudante de Análise e Desenvolvimento de Sistemas (ADS) na Fatec Carapicuíba, apaixonado por tecnologia e programação. Busco constantemente novos desafios que me permitam aprender, evoluir e contribuir com soluções inovadoras. Possuo experiência em desenvolvimento front-end e back-end, além de conhecimento em práticas modernas de DevOps. Atualmente, estou explorando o campo do Machine Learning (ML), com entendimento sobre o funcionamento, criação e treinamento de modelos, bem como familiaridade com ferramentas e bibliotecas amplamente utilizadas na área. Valorizo o trabalho em equipe e estou sempre disposto a agregar minhas habilidades em projetos desafiadores.",
-                "beyondTech": "Interesses Pessoais",
-                "hobbies": [
-                    "Ler livros",
-                    "Ouvir música",
-                    "Jogos"
-                ]
-            },
-            "professionalExperience": [
-                {
-                    "enterprise": "Boa Vista SCPC",
-                    "position": "Auxiliar de Escritório",
-                    "duration": "1 ano",
-                    "responsibilities": {
-                        "title": "Atividade desempenhada",
-                        "description": "Atuava como suporte para o meu setor, com as seguintes responsabilidades: ",
-                        "tasks": [
-                            "Gerenciar e analisar os feedbacks dos usuários sobre a página de FAQ, identificando os principais pontos e sugerindo melhorias.",
-                            "Realizar análise de dados relacionados à FAQ, para entender o desempenho e identificar oportunidades de melhoria.",
-                            "Criar um banner semanal destacando o melhor elogio recebido dos usuários, como reconhecimento para os funcionários.",
-                            "Oferecer suporte em outras tarefas conforme necessário, garantindo o bom andamento das operações."
-                        ]
-                    }
-                }
-            ],
-            "education": {
-                "titleEducation": "Educação",
-                "titleBootcamp": "Bootcamp",
-                "formalEducation": [
-                    {
-                        "institution": "Fatec Carapicuíba",
-                        "degree": "Análise e Desenvolvimento de Sistemas",
-                        "status": "Cursando",
-                        "startedAt": "08/2023",
-                        "endedAt": "",
-                        "period": "3º Período",
-                        "expectedGraduation": "Previsão de conclusão: 08/2026"
-                    },
-                    {
-                        "institution": "ETEC Carapicuíba",
-                        "degree": "Técnico em Administração",
-                        "status": "Concluído",
-                        "startedAt": "02/2019",
-                        "endedAt": "08/2020",
-                        "period": "",
-                        "expectedGraduation": "Concluído"
-                    }
-                ],
-                "bootcamps": [
-                    {
-                        "institution": "Digital Innovation One",
-                        "course": {
-                          "enterprise": "Deal",
-                          "name": "Spring Boot and Angular"
-                        },
-                        "duration": "91 horas",
-                        "year": "2024"
-                    },
-                    {
-                        "institution": "Digital Innovation One",
-                        "course": {
-                          "enterprise": "Sysvision",
-                          "name": "Data Analytics with Power BI"},
-                        "duration": "82 horas",
-                        "year": "2024"
-                    },
-                    {
-                        "institution": "Digital Innovation One",
-                        "course": {
-                          "enterprise": "Santander Bootcamp 2023",
-                          "name": "Backend Java"
-                        },
-                        "duration": "88 horas",
-                        "year": "2023"
-                    },
-                    {
-                      "institution": "Digital Innovation One",
-                      "course": {
-                        "enterprise": "Nexa",
-                        "name": "Engenharia de Prompts na AWS com Claude"
-                      },
-                      "duration": "10 horas",
-                      "year": "2024"
-                  }
-                    ,
-                    {
-                      "institution": "Digital Innovation One",
-                      "course": {
-                        "enterprise": "Nexa",
-                        "name": "Análise Avançada de Imagens e Texto com IA na AWS"
-                      },
-                      "duration": "10 horas",
-                      "year": "2024"
-                  }, {
-                    "institution": "Digital Innovation One",
-                    "course": {
-                      "enterprise": "BairesDev",
-                      "name": "Machine Learning Practitioner"
-                    },
-                    "duration": "96 horas",
-                    "year": "2024"
-                }
-                ]
-            }
+          }
         }
-    },
-    "skills": {
-        "list": [ {
-            "title":"Front End",
-            "description": "Experiência na criação de interfaces de usuário responsivas e dinâmicas, utilizando as melhores práticas e frameworks modernos.",
-            "icons": [
-              "devicon-html5-plain-wordmark",
-              "devicon-css3-plain-wordmark",
-              "devicon-javascript-plain",
-              "devicon-sass-original",
-              "devicon-bootstrap-plain-wordmark",
-              "devicon-react-original-wordmark",
-              "devicon-typescript-plain",
-              "devicon-angular-plain-wordmark"
-            ]
-        },
-        {
-            "title": "Back End",
-            "description": "Experiência no desenvolvimento de sistemas de API",
-            "icons":[
-              "devicon-java-plain-wordmark",
-              "devicon-spring-original-wordmark",
-              "devicon-azuresqldatabase-plain",
-              "devicon-mysql-plain-wordmark",
-              "devicon-python-plain-wordmark"
-            ]
-        },
-         {
-            "title": "Dev Ops",
-            "description": "Conhecimento em automação de ambientes e controle de versão para garantir fluxos de trabalho ágeis e integrados.",
-            "icons":[
-              "devicon-docker-plain-wordmark",
-              "devicon-git-plain-wordmark",
-              "devicon-github-original-wordmark"
-            ]
-        },
-        {
-          "title": "Machine Learning",
-          "description": "Conhecimento na aplicação de técnicas e ferramentas de aprendizado de máquina, incluindo regressão linear para análise preditiva e modelagem estatística. Habilidade em aproveitar as capacidades de IA Generativa, engenharia de prompts e integrar modelos utilizando plataformas como AWS SageMaker Canvas. Conhecimento prático em projetos, como reconhecimento facial, para classificação e detecção de padrões em dados visuais.",
-          "icons":[
-            "devicon-tensorflow-original-wordmark",
-            "devicon-keras-plain-wordmark",
-            "devicon-scikitlearn-plain",
-            "devicon-amazonwebservices-plain-wordmark"
-          ]
-        }],
-        "note": "Embora tenha experiência com as tecnologias mencionadas, sou iniciante na área e reconheço que sempre há mais a aprender. Estou continuamente aprimorando minhas habilidades e me mantendo atualizado com as últimas tendências e melhores práticas do setor."
-    },
-    "project": {
-      "title": "Projetos",
-      "projects":[
-        {
-            "name": "Grandes Mentes",
-            "description": "O projeto 'Grandes Mentes' tem como objetivo oferecer um espaço de reflexão e inspiração para os usuários, utilizando a API do site 'Pensador'. Por meio desta aplicação, frases marcantes e reflexivas de quatro filósofos famosos são apresentadas de forma aleatória, trazendo sabedoria e motivação. Basta solicitar uma nova citação para que uma nova mensagem seja exibida na tela, enriquecendo a experiência do usuário com pensamentos profundos e universais.",
-            "links": {
-                "site": "https://project-grandesmentes.vercel.app/",
-                "github": "https://github.com/LeviPereira9/frases"
-            },
-            "img": "gm-min.png"
-            ,
-            "technologiesUsed": [
-              "devicon-react-original",
-              "devicon-sass-original"
-            ]
-        },{
-          "name":"Weather App",
-          "description": "Este projeto permite que os usuários acompanhem o clima em diversas cidades ao redor do mundo utilizando a API OpenWeatherMap. Com uma interface intuitiva, o usuário pode buscar pelo nome de uma cidade e, instantaneamente, visualizar informações detalhadas sobre o clima local, incluindo temperatura, condições atmosféricas e outros dados relevantes. A aplicação é ideal para quem deseja se manter informado sobre o clima em diferentes regiões.",
-          "links":{
-            "site":"https://levipereira9.github.io/WeatherApp/",
-            "github":"https://github.com/LeviPereira9/WeatherApp"
+      ],
+      "education": {
+        "titleEducation": "Educação",
+        "titleBootcamp": "Bootcamp",
+        "formalEducation": [
+          {
+            "institution": "Fatec Carapicuíba",
+            "degree": "Análise e Desenvolvimento de Sistemas",
+            "status": "Cursando",
+            "startedAt": "08/2023",
+            "endedAt": "",
+            "period": "6º Período",
+            "expectedGraduation": "Previsão de conclusão: 08/2028"
           },
-          "img":"weather-min.png",
-          "technologiesUsed":[
-            "devicon-javascript-plain",
-            "devicon-bootstrap-plain"
-          ]
-        }
-    ]},
-    "contactMe": {
-        "title": "Entre em contato",
-        "message": "Estou sempre aberto a conversar! Se você tem uma dúvida, quer trocar ideias ou apenas dizer 'oi', minha caixa de entrada está à disposição. Além disso, caso tenha interesse em discutir oportunidades de emprego ou projetos relacionados à tecnologia, ficarei feliz em ouvir você. Sinta-se à vontade para me enviar uma mensagem, e responderei o mais rápido possível!"
+          {
+            "institution": "ETEC Carapicuíba",
+            "degree": "Técnico em Administração",
+            "status": "Concluído",
+            "startedAt": "02/2019",
+            "endedAt": "08/2020",
+            "period": "",
+            "expectedGraduation": "Concluído"
+          }
+        ],
+        "bootcamps": [
+          {
+            "institution": "Digital Innovation One",
+            "course": {
+              "enterprise": "Deal",
+              "name": "Spring Boot and Angular"
+            },
+            "duration": "91 horas",
+            "year": "2024"
+          },
+          {
+            "institution": "Digital Innovation One",
+            "course": {
+              "enterprise": "Sysvision",
+              "name": "Data Analytics with Power BI"
+            },
+            "duration": "82 horas",
+            "year": "2024"
+          },
+          {
+            "institution": "Digital Innovation One",
+            "course": {
+              "enterprise": "Santander Bootcamp 2023",
+              "name": "Backend Java"
+            },
+            "duration": "88 horas",
+            "year": "2023"
+          },
+          {
+            "institution": "Digital Innovation One",
+            "course": {
+              "enterprise": "Nexa",
+              "name": "Engenharia de Prompts na AWS com Claude"
+            },
+            "duration": "10 horas",
+            "year": "2024"
+          },
+          {
+            "institution": "Digital Innovation One",
+            "course": {
+              "enterprise": "Nexa",
+              "name": "Análise Avançada de Imagens e Texto com IA na AWS"
+            },
+            "duration": "10 horas",
+            "year": "2024"
+          },
+          {
+            "institution": "Digital Innovation One",
+            "course": {
+              "enterprise": "BairesDev",
+              "name": "Machine Learning Practitioner"
+            },
+            "duration": "96 horas",
+            "year": "2024"
+          }
+        ]
+      }
     }
+  },
+  "skills": {
+    "list": [
+      {
+        "title": "Front End",
+        "description": "Experiência na criação de interfaces de usuário responsivas e dinâmicas, utilizando as melhores práticas e frameworks modernos.",
+        "icons": [
+          "devicon-html5-plain-wordmark",
+          "devicon-css3-plain-wordmark",
+          "devicon-javascript-plain",
+          "devicon-sass-original",
+          "devicon-bootstrap-plain-wordmark",
+          "devicon-react-original-wordmark",
+          "devicon-typescript-plain",
+          "devicon-angular-plain-wordmark"
+        ]
+      },
+      {
+        "title": "Back End",
+        "description": "Experiência no desenvolvimento de sistemas de API",
+        "icons": [
+          "devicon-java-plain-wordmark",
+          "devicon-spring-original-wordmark",
+          "devicon-azuresqldatabase-plain",
+          "devicon-mysql-plain-wordmark",
+          "devicon-python-plain-wordmark"
+        ]
+      },
+      {
+        "title": "Dev Ops",
+        "description": "Conhecimento em automação de ambientes e controle de versão para garantir fluxos de trabalho ágeis e integrados.",
+        "icons": [
+          "devicon-docker-plain-wordmark",
+          "devicon-git-plain-wordmark",
+          "devicon-github-original-wordmark"
+        ]
+      },
+      {
+        "title": "Machine Learning",
+        "description": "Conhecimento na aplicação de técnicas e ferramentas de aprendizado de máquina, incluindo regressão linear para análise preditiva e modelagem estatística. Habilidade em aproveitar as capacidades de IA Generativa, engenharia de prompts e integrar modelos utilizando plataformas como AWS SageMaker Canvas. Conhecimento prático em projetos, como reconhecimento facial, para classificação e detecção de padrões em dados visuais.",
+        "icons": [
+          "devicon-tensorflow-original-wordmark",
+          "devicon-keras-plain-wordmark",
+          "devicon-scikitlearn-plain",
+          "devicon-amazonwebservices-plain-wordmark"
+        ]
+      }
+    ],
+    "note": "Embora tenha experiência com as tecnologias mencionadas, sou iniciante na área e reconheço que sempre há mais a aprender. Estou continuamente aprimorando minhas habilidades e me mantendo atualizado com as últimas tendências e melhores práticas do setor."
+  },
+  "project": {
+    "title": "Projetos",
+    "projects": [
+      {
+        "name": "Grandes Mentes",
+        "description": "O projeto 'Grandes Mentes' tem como objetivo oferecer um espaço de reflexão e inspiração para os usuários, utilizando a API do site 'Pensador'. Por meio desta aplicação, frases marcantes e reflexivas de quatro filósofos famosos são apresentadas de forma aleatória, trazendo sabedoria e motivação. Basta solicitar uma nova citação para que uma nova mensagem seja exibida na tela, enriquecendo a experiência do usuário com pensamentos profundos e universais.",
+        "links": {
+          "site": "https://project-grandesmentes.vercel.app/",
+          "github": "https://github.com/LeviPereira9/frases"
+        },
+        "img": "gm-min.png",
+        "technologiesUsed": ["devicon-react-original", "devicon-sass-original"]
+      },
+      {
+        "name": "Weather App",
+        "description": "Este projeto permite que os usuários acompanhem o clima em diversas cidades ao redor do mundo utilizando a API OpenWeatherMap. Com uma interface intuitiva, o usuário pode buscar pelo nome de uma cidade e, instantaneamente, visualizar informações detalhadas sobre o clima local, incluindo temperatura, condições atmosféricas e outros dados relevantes. A aplicação é ideal para quem deseja se manter informado sobre o clima em diferentes regiões.",
+        "links": {
+          "site": "https://levipereira9.github.io/WeatherApp/",
+          "github": "https://github.com/LeviPereira9/WeatherApp"
+        },
+        "img": "weather-min.png",
+        "technologiesUsed": [
+          "devicon-javascript-plain",
+          "devicon-bootstrap-plain"
+        ]
+      },
+      {
+        "name": "Aubos API",
+        "description": "O Aubos é uma API RESTful desenvolvida para o gerenciamento e acompanhamento de informações sobre livros e suas equipes criativas. A aplicação permite registrar e consultar dados de autores, editores, tradutores e outros colaboradores envolvidos em uma obra, incluindo os períodos de participação de cada um. O projeto foi desenvolvido com foco em organização de dados literários e boas práticas de arquitetura backend, utilizando autenticação segura, cache para otimização de desempenho e um design baseado em padrões REST.",
+        "links": {
+          "github": "https://github.com/LeviPereira9/aubos"
+        },
+        "img": "aubos-min.png",
+        "technologiesUsed": [
+          "devicon-java-plain",
+          "devicon-spring-plain",
+          "devicon-mysql-plain",
+          "devicon-redis-plain"
+        ]
+      },
+      {
+        "name": "FStats API",
+        "description": "A FStats é uma API RESTful desenvolvida para análise estatística de partidas de futebol com base em dados históricos de ligas. A aplicação avalia gols marcados e sofridos, além do desempenho das equipes em jogos em casa e fora, para identificar padrões e estimar faixas prováveis de gols utilizando modelagem estatística baseada na distribuição de Poisson. O projeto foi desenvolvido com Java e Spring Boot, utilizando autenticação via JWT, banco de dados MySQL e Redis para otimização de desempenho.",
+        "links": {
+          "site": "https://arthurguerraa.github.io/projeto-molinari/",
+          "github": "https://github.com/LeviPereira9/fstats"
+        },
+        "img": "fstats-min.png",
+        "technologiesUsed": [
+          "devicon-java-plain",
+          "devicon-spring-plain",
+          "devicon-mysql-plain",
+          "devicon-redis-plain",
+          "devicon-docker-plain"
+        ]
+      }
+    ]
+  },
+  "contactMe": {
+    "title": "Entre em contato",
+    "message": "Estou sempre aberto a conversar! Se você tem uma dúvida, quer trocar ideias ou apenas dizer 'oi', minha caixa de entrada está à disposição. Além disso, caso tenha interesse em discutir oportunidades de emprego ou projetos relacionados à tecnologia, ficarei feliz em ouvir você. Sinta-se à vontade para me enviar uma mensagem, e responderei o mais rápido possível!"
+  }
 }
