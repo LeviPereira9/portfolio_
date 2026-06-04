@@ -215,7 +215,7 @@
         "name": "FStats API",
         "description": "A FStats é uma API RESTful desenvolvida para análise estatística de partidas de futebol com base em dados históricos de ligas. A aplicação avalia gols marcados e sofridos, além do desempenho das equipes em jogos em casa e fora, para identificar padrões e estimar faixas prováveis de gols utilizando modelagem estatística baseada na distribuição de Poisson. O projeto foi desenvolvido com Java e Spring Boot, utilizando autenticação via JWT, banco de dados MySQL e Redis para otimização de desempenho.",
         "links": {
-          "site": "https://arthurguerraa.github.io/projeto-molinari/",
+          "site": "https://arthurguerraa.github.io/Goal-Radar/index.html",
           "github": "https://github.com/LeviPereira9/fstats"
         },
         "img": "fstats-min.png",
